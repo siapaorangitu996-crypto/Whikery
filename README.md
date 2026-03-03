@@ -27,4 +27,32 @@ Jika Anda ingin melihat kode di komputer lokal:
 - Pilih **"Download ZIP"** untuk mengunduh langsung, atau salin URL HTTPS untuk melakukan `git clone`.
 
 ---
-*Dokumentasi ini dibuat untuk membantu pengguna memahami cara memantau perkembangan project.*
+
+### 6. Cara Melihat Tampilan Web di Berbagai Perangkat (Responsive View)
+Jika project ini sudah dihosting atau sedang dijalankan di lokal, Anda dapat melihat tampilannya untuk Android, Tablet, atau Laptop dengan cara berikut:
+
+#### **A. Menggunakan Browser Developer Tools (Chrome/Edge/Firefox)**
+1. **Buka Website**: Akses URL website yang ingin Anda review.
+2. **Buka Inspect Element**:
+   - Klik kanan di mana saja pada halaman web dan pilih **"Inspect"** (Periksa).
+   - Atau tekan tombol shortcut `F12` atau `Ctrl + Shift + I` (Windows) / `Cmd + Option + I` (Mac).
+3. **Aktifkan Device Toolbar**:
+   - Klik ikon **"Toggle Device Toolbar"** yang berbentuk gambar HP dan Tablet (biasanya di pojok kiri atas jendela Inspect).
+   - Atau tekan `Ctrl + Shift + M`.
+
+#### **B. Memilih Jenis Perangkat (Detail)**
+- **Untuk Android/Smartphone**:
+  - Pada bagian atas halaman (setelah Device Toolbar aktif), klik dropdown **"Responsive"**.
+  - Pilih perangkat seperti **iPhone SE, Pixel 7, atau Samsung Galaxy S8+** untuk melihat tampilan Android/Mobile.
+- **Untuk Tablet/iPad**:
+  - Pilih **iPad Air** atau **iPad Mini** dari daftar dropdown yang sama.
+- **Untuk Laptop/Desktop**:
+  - Anda bisa memilih **"Responsive"** dan tarik bagian pinggir layar ke arah kanan hingga lebar layar mencapai 1024px atau lebih.
+  - Atau pilih opsi **Laptop (1024px/1440px)** jika tersedia di daftar.
+
+#### **C. Tips Review Lengkap**
+- **Putar Layar (Rotation)**: Klik ikon rotasi di sebelah daftar perangkat untuk melihat tampilan landscape (mendatar).
+- **Zooming**: Gunakan opsi persentase di sebelah daftar perangkat untuk menyesuaikan besar tampilan agar pas di layar Anda.
+
+---
+*Dokumentasi ini dibuat untuk membantu pengguna memahami cara memantau perkembangan project dan melakukan review tampilan secara detail.*
