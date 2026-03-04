@@ -50,9 +50,51 @@ Jika project ini sudah dihosting atau sedang dijalankan di lokal, Anda dapat mel
   - Anda bisa memilih **"Responsive"** dan tarik bagian pinggir layar ke arah kanan hingga lebar layar mencapai 1024px atau lebih.
   - Atau pilih opsi **Laptop (1024px/1440px)** jika tersedia di daftar.
 
-#### **C. Tips Review Lengkap**
-- **Putar Layar (Rotation)**: Klik ikon rotasi di sebelah daftar perangkat untuk melihat tampilan landscape (mendatar).
-- **Zooming**: Gunakan opsi persentase di sebelah daftar perangkat untuk menyesuaikan besar tampilan agar pas di layar Anda.
+---
+
+### 7. Cara Memindahkan Pekerjaan ke Repositori Lain (Repository Migration)
+Jika Anda ingin memindahkan seluruh kode dan riwayat pekerjaan dari satu repositori (Repo A) ke repositori baru (Repo B), berikut adalah langkah-langkah detailnya:
+
+#### **Metode 1: Menggunakan Git Remote (Paling Umum)**
+Metode ini digunakan jika Anda sudah memiliki folder project di komputer Anda.
+1. **Buat Repositori Baru**: Buat repositori kosong di GitHub/GitLab (Repo B).
+2. **Buka Terminal/CMD**: Masuk ke folder project Anda.
+3. **Cek Remote Saat Ini**:
+   ```bash
+   git remote -v
+   ```
+4. **Tambah Remote Baru**:
+   ```bash
+   git remote add destination https://github.com/username/repo-baru.git
+   ```
+5. **Push ke Repositori Baru**:
+   ```bash
+   git push destination main
+   ```
+   *(Ganti `main` dengan nama branch yang ingin Anda pindahkan).*
+
+#### **Metode 2: Mirroring (Memindahkan Seluruh Branch & History)**
+Gunakan metode ini jika Anda ingin memindahkan **semua** branch dan riwayat commit secara sempurna.
+1. **Clone Mirror dari Repo Lama**:
+   ```bash
+   git clone --mirror https://github.com/username/repo-lama.git
+   ```
+2. **Masuk ke Folder yang Terbentuk**:
+   ```bash
+   cd repo-lama.git
+   ```
+3. **Push Mirror ke Repo Baru**:
+   ```bash
+   git push --mirror https://github.com/username/repo-baru.git
+   ```
+
+#### **Metode 3: Manual (Tanpa Git CLI)**
+1. **Download ZIP**: Di Repo A, klik tombol **Code** > **Download ZIP**.
+2. **Ekstrak**: Ekstrak file di komputer Anda.
+3. **Upload ke Repo B**:
+   - Buka Repo B di browser.
+   - Klik **"uploading an existing file"**.
+   - Drag dan drop semua file dari folder hasil ekstrak ke browser.
 
 ---
-*Dokumentasi ini dibuat untuk membantu pengguna memahami cara memantau perkembangan project dan melakukan review tampilan secara detail.*
+*Dokumentasi ini dibuat untuk membantu pengguna memahami cara memantau perkembangan project, melakukan review tampilan, dan mengelola repositori dengan mudah.*
